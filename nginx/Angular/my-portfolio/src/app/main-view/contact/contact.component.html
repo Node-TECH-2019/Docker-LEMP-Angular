@@ -1,0 +1,118 @@
+<section id="contact">
+  <h2 class="head-border txtC pl30 pr30">Contact</h2>
+  <div id="contact_form" class="center">
+    <form [formGroup]="myForm" (ngSubmit)="submit()">
+      <ul>
+        <li>
+          <ul class="contact_list">
+            <li>
+              <label for="companyname" class="bold txtL contact_font">会社名／団体名
+                <span class="bg_PURPLE needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">任意</span>
+              </label>
+            </li>
+            <li>
+            <span class="error"></span>
+              <input
+              [formControl]="companyname"
+              class="w100pc cotact_form"
+              id="companyname"
+              type="text"
+              name="companyname"
+              placeholder="会社名／団体名"
+              value=""
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="contact_list">
+            <li>
+              <label for="your_name" class="txtL bold contact_font">お名前
+                <span class="bg_RED needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">必須</span>
+              </label>
+            </li>
+            <li>
+            <span class="error"></span>
+              <input [formControl]="your_name" class="w100pc cotact_form" id="your_name" type="text" name="your_name" placeholder="氏名" required value="">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="contact_list">
+            <li>
+              <label for="furigana" class="txtL bold contact_font">ふりがな
+                <span class="bg_RED needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">必須</span>
+              </label>
+            </li>
+            <li>
+            <span class="error"></span>
+              <input [formControl]="furigana" class="w100pc cotact_form" id="furigana" type="text" name="furigana" placeholder="ふりがな" required value="">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="contact_list">
+            <li>
+                <label for="email" class="txtL bold contact_font">Email アドレス
+                <span class="bg_RED needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">必須</span>
+              </label>
+            </li>
+            <li>
+              <span class="error"></span>
+              <input [formControl]="email" type="email" class="w100pc cotact_form" id="email" name="email" placeholder="Email アドレス" required value="" (keyup)="isErrorExists()">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="contact_list">
+            <li>
+              <label for="tel" class="txtL bold contact_font">電話番号
+                <span class="bg_PURPLE needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">任意</span>
+              </label>
+            </li>
+            <li>
+            <span class="error"></span>
+              <input [formControl]="tel" type="tel" class="w100pc cotact_form" id="tel" name="tel" value="" placeholder="お電話番号（半角英数字でご入力ください）">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="contact_list">
+            <li>
+              <label for="subject" class="txtL bold contact_font">件名（タイトル）
+                <span class="bg_RED needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">必須</span>
+              </label>
+            </li>
+            <li>
+            <span class="error"></span>
+              <input [formControl]="subject" type="text" class="w100pc cotact_form" id="subject" name="subject"  placeholder="件名" required value="">
+            </li>
+          </ul>
+        </li>
+        <li>
+          <ul class="contact_list">
+            <li>
+              <label for="comment" class="txtL bold contact_font">お問い合わせ内容
+                <span class="bg_RED needtag WHITE ml10 mb5 fz10 pt2 pb2 pl10 pr10">必須</span>
+              </label>
+            </li>
+            <li>
+            <span class="error"></span>
+              <textarea [formControl]="comment" class="w100pc" id="comment" name="comment" placeholder="お問い合わせ内容（1000文字まで）をお書きください" required rows="3"></textarea>
+            </li>
+          </ul>
+        </li>
+        <li class="btn_box">
+          <ul class="btn_box_inner">
+            <li class="btn_list">
+              <button class="btn btn_1" type="submit" [disabled]="isDisabled" name="submitted"><span class="btn-Text">送信</span></button>
+            </li>
+            <li class="btn_list">
+              <button class="btn btn_2" type="reset" value="Reset" (click)="reset()"><span class="btn-Text">リセット</span></button>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </form>
+  </div>
+</section>

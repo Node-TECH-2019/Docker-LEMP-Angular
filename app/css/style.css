@@ -1,0 +1,2041 @@
+/*
+Theme Name : FakieStyle
+*/
+@charset "utf-8";
+
+/* ==========================================================================
+backnumbers
+========================================================================== */
+.backnumbers_text {
+	padding: 0 10% 15%;
+}
+
+.backnumbers_text li.info {
+	text-align: left;
+}
+
+.backnumbers_text h2 {
+	font-size: 2em;
+	margin: 5%;
+}
+.backnumbers_text h3{
+	line-height: 2em;
+}
+
+.backnumbers_category {
+	width: 65px;
+	line-height: 2em;
+	align-items: center;
+}
+
+.month_day {
+width: 30px;
+margin-right: 20px;
+}
+
+.days {
+line-height: 14px;
+}
+
+.contents {
+padding-bottom: .5em;
+}
+
+.contents::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 80%;
+	background: -moz-linear-gradient(left, #333, #FFF);
+	background: -webkit-linear-gradient(left, #333, #FFF);
+	background: linear-gradient(to right, #333, #FFF);
+  }
+
+.info {
+width: 60%;
+height: 20%;
+}
+
+.description {
+	font-size: 100%;
+}
+
+/* -----------------------------------------------------------
+CSS business_sales
+----------------------------------------------------------- */
+
+
+.business_list li a {
+	width: 100%;
+	height: 100%;
+}
+
+.sns a:first-child img {
+	margin: 0!important;
+}
+
+.sns a img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.sns a .line_icon {
+	font-size: 20px;
+	margin-left: 10px;
+	vertical-align: bottom;
+}
+
+.trim img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+
+.business_item {
+	width: 50%;
+}
+
+.business_item_img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.business_text {
+	padding: 0 10% 15%;
+	word-break: break-all;
+}
+
+.business_text h2 {
+	font-size: 2em;
+	margin: 5%;
+}
+
+.business_text h3 {
+	font-size: 1.3em;
+	margin-bottom: 2%;
+}
+
+.business_text a {
+	color: #000;
+}
+
+/* -----------------------------------------------------------
+CSS Information
+ File name:      default.css
+ Style Info:     デフォルトのスタイルのリセット及び基本設定
+----------------------------------------------------------- */
+/*　全体　*/
+
+body {
+	width: 100%;
+	font-family: "游明朝", YuMincho, serif, "Arial", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic";
+  background-color: #3e3e3e;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h2, .globalMenuSp_nav {
+	font-weight: 900;
+	font-family: serif;
+}
+
+
+/*==================================================================
+	見出しの横線
+==================================================================*/
+.head-border {
+  display: flex;
+  align-items: center;
+}
+
+.head-border:before,
+.head-border:after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #666;
+}
+
+.head-border:before {
+  margin-right: 1rem;
+}
+
+.head-border:after {
+  margin-left: 1rem;
+}
+
+.slick-counter {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 1%;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	opacity: 0.7;
+	font-weight: bold;
+}
+
+.business_list li{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	box-shadow: 0px 5px 10px rgb(196, 196, 196);
+	cursor: pointer;
+}
+
+.business_list li {
+	transition: 0.5s;
+}
+
+.business_list li:hover {
+  transform: translateY(-3%);
+	transition-duration: 0.3s;
+	box-shadow: 0px 10px 15px rgb(196, 196, 196);
+}
+
+.business_list li a {
+  display: block
+}
+
+.centering {
+	display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+	width: 100%;
+	opacity: 1;
+}
+
+.centering:hover {
+	opacity: 1;
+}
+
+.philosophy_box_2 h3 {
+ font-size: 25px;
+ text-align: center;
+ letter-spacing: 5px;
+ line-height: 60px;
+}
+
+.philosophy_box_2 {
+  background-color: #fff;
+	box-shadow: 0px 5px 10px rgb(196, 196, 196);
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.philosophy_box_5 {
+	padding: 3.6% 2.1% ;
+  background-color: #fff;
+	box-shadow: 0px 5px 10px rgb(196, 196, 196);
+}
+
+.philosophy_box_5_inner {
+	border: 2px solid rgba(62, 62, 62, 0.2);
+}
+
+p, dd {
+	font-weight: 600;
+}
+
+input, select, textarea {
+	box-sizing: border-box;
+}
+
+input, select {
+	padding: 0 5px;
+}
+
+textarea {
+	padding: 5px;
+}
+
+.error {
+	color: red;
+}
+
+button {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#slick {
+	position: relative;
+}
+
+.slider-wrap {
+  width: 100%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 98;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev, .slick-next {
+	width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+
+.slick-prev {
+  border-right: 6px solid #fff;
+}
+
+.slick-next {
+  border-left: 6px solid #fff;
+}
+
+.kv {
+	display: block;
+	position: relative;
+}
+
+/*==================================================================
+	.top_information
+==================================================================*/
+
+.top_information ::selection {
+	background-color: #fff;
+	color: #286BC1;
+}
+
+.top_information {
+	position: absolute;
+	right: 0;
+	box-sizing: border-box;
+	padding: 15px 15px;
+	z-index: 98;
+}
+
+.top_information_box_text {
+	overflow: hidden;
+}
+
+.owl-carousel.owl-loaded {
+	overflow: hidden;
+}
+
+/*==================================================================
+	.top_news-row
+==================================================================*/
+
+.top_news-row_content {
+	display: flex;
+}
+
+/* タイトル */
+.top_news-row_content_title {
+	font-size: 12px;
+	font-weight: 500;
+	color: #fff;
+}
+
+/* 日付 */
+.top_news-row_content_date {
+	line-height: 1;
+	margin-right: 2.0rem;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 0.125em;
+}
+
+/* お知らせのブロックのボーダー */
+.top_news-row_content_text {
+	margin-bottom: 3.0rem;
+	padding-top: 1.0rem;
+	padding-bottom: 3.0rem;
+}
+
+.top_news-row_content a {
+	width: 100%;
+	transition: 0.20s cubic-bezier(0.260, 0.005, 0.000, 1.035);
+}
+
+/* お知らせの高さ */
+.top_news-row .scroll_area {
+	height: 17.2rem;
+	overflow: hidden;
+}
+
+/* ホバー */
+.top_news-row_content a h4 {
+	display: inline-block;
+	font-family: inherit;
+	position: relative;
+	padding-bottom: 2px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.top_news-row_content a:hover h4::after {
+	right: auto;
+	left: 0;
+	width: 100%;
+}
+
+.top_news-row_content a h4::after {
+	position: absolute;
+	width: 0;
+	right: 0;
+	left: auto;
+	bottom: 0px;
+	height: 1px;
+	background-color: #fff;
+	transition: 0.25s cubic-bezier(0.260, 0.005, 0.000, 1.035);
+	content: "";
+	z-index: 1;
+}
+
+/*==================================================================
+	$news
+==================================================================*/
+
+/* タイトル */
+.news .news_content_title {
+	margin-bottom: 16px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+/* 日付 */
+.news .news_content_date {
+	line-height: 1;
+	margin-left: 1px;
+	color: #ADB6BF;
+	font-weight: 300;
+}
+/* お知らせテキスト */
+.news .news_content_text {
+	margin-bottom: 8rem;
+	padding-bottom: 8rem;
+	border-bottom: 1px solid #E1EBF3;
+}
+.news article:last-child .news_content_text {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/* ==========================================================================
+  Business
+  business_list
+  ========================================================================== */
+
+#business {
+	padding-top: 130px;
+}
+
+.business_pd {
+	padding: 0 5.4% ;
+	margin: 0 auto;
+}
+
+.business_list {
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flexbox;
+	display: -moz-flexbox;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	line-height: 1.2;
+	font-size: 16px;
+	text-align: left;
+}
+
+#business_inner{
+	padding: 0 30px;
+}
+
+.business_list p{
+	text-align: left;
+	margin: 15px 0;
+}
+
+.business_list_img{
+  width: 100%;
+}
+
+.business_ttl {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transform : translate(-50%, -50%);
+  transform : translate(-50%, -50%);
+  width: 100%;
+}
+
+/* ↑ここから追加 */
+/* 2020-12-09 0:58 */
+/* ==========================================================================
+company
+========================================================================== */
+
+#company {
+	width: 100%;
+}
+
+.company_box li {
+	line-height: 2em;
+}
+
+.company_box dt {
+	display: block;
+	clear: left;
+	float: left;
+	text-align: left;
+}
+
+.company_box dd {
+	display: block;
+	float: left;
+	text-align: left;
+	font-size: 16px;
+}
+
+.company_list {
+	width: 100%;
+}
+
+.company_inner {
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+contact
+========================================================================== */
+
+#result_box {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#result_box > p > a {
+	color: #286BC1;
+}
+
+.cotact_form {
+  height: 30px;
+}
+
+textarea {
+	resize: none;
+	height: 200px;
+}
+
+.needtag {
+	display: inline-block;
+  vertical-align: middle;
+}
+
+.btn_box_inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	width: 85px;
+	padding: 2px 10px;
+}
+
+
+/* ==========================================================================
+philosophy
+========================================================================== */
+
+.philosophy_box_2 h3 {
+	font-size: 25px;
+	line-height: 60px;
+}
+
+.philosophy_box_2 {
+  background-color: #fff;
+	box-shadow: 0px 5px 10px rgb(196, 196, 196);
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.philosophy_box_5 {
+	padding: 3.6% 2.1% ;
+  background-color: #fff;
+	box-shadow: 0px 5px 10px rgb(196, 196, 196);
+}
+
+.philosophy_box_5_inner {
+	border: 2px solid rgba(62, 62, 62, 0.2);
+	padding: 5.5% 5.6%;
+}
+
+.philosophy_box_5_inner p {
+	margin: 6.5% 0;
+	max-height: 168px;
+}
+
+.philosophy_box_5_inner h3 {
+	display: inline;
+	background: linear-gradient(transparent 90%, #4CADC2 90%);
+}
+
+.philosophy_box_1 {
+  width: 100%;
+  background-color: #E7E7E7;
+  z-index: 1;
+}
+
+/* ==========================================================================
+btn_hover_animation
+========================================================================== */
+
+.btn {
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn_1 {
+	border: 3px solid #4CADC2;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #3e3e3e), color-stop(50%, #4CADC2));
+  background-image: -webkit-linear-gradient(left, #3e3e3e 50%, #4CADC2 50%);
+	background-image: linear-gradient(left, #3e3e3e, #4CADC2 50%);
+}
+
+.btn_2 {
+	border: 3px solid #3e3e3e;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #4CADC2), color-stop(50%, #3e3e3e));
+	background-image: -webkit-linear-gradient(left, #4CADC2 50%, #3e3e3e 50%);
+	background-image: linear-gradient(left, #4CADC2, #3e3e3e 50%);
+}
+
+.btn_1:hover {
+	border: 3px solid #3e3e3e;
+}
+
+.btn_2:hover {
+	border: 3px solid #4CADC2;
+}
+
+.btn_1:hover, .btn_2:hover {
+	background-position: 0;
+  color: #fff;
+}
+
+.header_img_txt {
+	position: absolute;
+	padding: 20px;
+	margin: 25px;
+	bottom: 20%;
+	left: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.header_img_txt_ttl {
+	font-size: 150%;
+}
+
+.header_img_txt_content {
+	font-size: 100%;
+	color: white;
+}
+
+.header_img_txt_a {
+	color: #286BC1;
+	font-size: 80%;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.header_img_txt_br::before {
+	content: "\A" !important ;
+	white-space: pre !important ;
+}
+
+@media screen and (max-width: 1023px){
+	.header_img_txt {
+		margin: 0;
+		background-color: rgba(0,0,0,0.3);
+		left: 0;
+		bottom: 0;
+	}
+
+	.header_img_txt_ttl {
+		font-size: 120%;
+		display: inline-block;
+	}
+
+	.header_img_txt_content {
+		display: none;
+	}
+
+	.header_img_txt_a {
+		font-size: 50%;
+		margin-top: -20px;
+		display: inline-block;
+		text-align: center;
+	}
+
+	.header_img_txt_br::before {
+		content: "" !important ;
+		white-space: unset !important ;
+	}
+}
+
+@media screen and (min-width: 769px){
+
+#wrapper {
+  max-width: 1200px;
+}
+
+h2 {
+	margin-bottom: 65px;
+}
+
+/* ==========================================================================
+header
+========================================================================== */
+
+
+#header_wrapper {
+  position: fixed;
+	max-width: 1200px;
+	width: 100%;
+	height: 90px;
+  z-index: 99;
+}
+
+#pc_header {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#header_bg {
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: 0.5s;
+  height: 100%;
+}
+
+#pc_header_inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#pc_nav {
+  margin: 0 50px;
+  line-height: 90px;
+}
+
+#pc_nav ul > li {
+	display: inline-block;
+}
+
+#header_logo {
+  width: 70px;
+  margin: 10px 0;
+  margin-left: 50px;
+}
+
+.sub_list {
+	position: relative;
+}
+
+.sub_list > ul {
+	min-width: 125px;
+	position: absolute;
+	left: -25px;
+	top: 90px;
+	line-height: 12px;
+	font-size: 80%;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0 10px;
+	color: white;
+	display: none;
+	transition: 0.3s;
+}
+
+.sub_list:hover >  ul {
+	display: inline-block;
+}
+
+#pc_nav>ul>li::after {
+  content: "";
+	border-left: 1px solid rgba(255,255,255,0.2);
+  margin: 0 20px;
+}
+
+#pc_nav ul li:last-child::after {
+  border: none;
+  margin: 0;
+}
+
+#pc_nav ul li a {
+	font-family: serif;
+}
+
+#mobile {
+	display: none;
+}
+
+
+/* ==========================================================================
+scrollAnimation
+========================================================================== */
+
+li.sub_list > ul.sub_nav_hide {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.hide {
+	opacity: 0;
+	width: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+div#header_bg.active {
+	width: 100%;
+  opacity: 1;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+
+/* ==========================================================================
+slideshow
+========================================================================== */
+
+
+.slick-arrow {
+	bottom: 2.5%;
+}
+
+.slick-prev {
+	right: 52.5%;
+}
+
+.slick-next {
+	left: 52.5%;
+}
+
+.slick-counter {
+	width: 6%;
+	padding: 0.4%;
+}
+
+
+
+.top_information {
+	top: -40px;
+	width: 30%;
+	background-color: rgb(40,107,193, 0.9);
+}
+
+.top_information h3 {
+	font-family: serif;
+	line-height: 1;
+	font-size: 18px;
+	letter-spacing: 0.075em;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.owl-carousel.owl-loaded {
+	overflow: hidden;
+}
+
+/*==================================================================
+
+	.top_news-row
+
+==================================================================*/
+
+
+/* 日付 */
+.top_news-row_content_date {
+	margin-bottom: 0.4rem;
+	font-size: 12px;
+
+}
+
+/* お知らせの高さ */
+.top_news-row .scroll_area {
+	height: 17.2rem;
+	overflow: hidden;
+}
+/* ホバー */
+.top_news-row_content a h4 {
+	display: inline-block;
+	font-family: inherit;
+	position: relative;
+	padding-bottom: 2px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.top_news-row_content a:hover h4::after {
+	right: auto;
+	left: 0;
+	width: 100%;
+}
+.top_news-row_content a h4::after {
+	position: absolute;
+	width: 0;
+	right: 0;
+	left: auto;
+	bottom: 0px;
+	height: 1px;
+	background-color: #fff;
+	transition: 0.25s cubic-bezier(0.260, 0.005, 0.000, 1.035);
+	content: "";
+	z-index: 1;
+}
+/*==================================================================
+
+	$news
+
+==================================================================*/
+/* タイトル */
+.news .news_content_title {
+	margin-bottom: 16px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+/* 日付 */
+.news .news_content_date {
+	line-height: 1;
+	margin-left: 1px;
+	color: #ADB6BF;
+	font-weight: 300;
+}
+/* お知らせテキスト */
+.news .news_content_text {
+	margin-bottom: 8rem;
+	padding-bottom: 8rem;
+	border-bottom: 1px solid #E1EBF3;
+}
+.news article:last-child .news_content_text {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/* ==========================================================================
+  Business
+  business_list
+  ========================================================================== */
+
+
+.business_list {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.business_list li{
+	width: 23%;
+	margin: 0 4%;
+}
+
+.business_list li {
+ margin-top: 6%;
+}
+
+.business_list li:nth-last-child(n+3) {
+ margin-top: 0;
+}
+
+.business_list li:nth-child(3n){
+	margin-right: 0;
+}
+
+.business_list_img{
+  width: 100%;
+}
+
+.business_ttl {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+/* ==========================================================================
+  Philosophy
+  ========================================================================== */
+
+#philosophy {
+  padding-top: 130px;
+}
+
+.philosophy_box_1 {
+	position: relative;
+}
+
+.philosophy_box_2 {
+	width: 600px;
+	padding: 25px 0px;
+	top: 90%;
+}
+
+#philosophy_box_345 {
+	margin-top: 15%;
+	margin-bottom: 241px;
+}
+
+.philosophy_box_3 {
+	width: 49%;
+	float: left;
+}
+
+.philosophy_box_3:last-child {
+	margin-left: 1%;
+}
+
+.philosophy_box_3_img_position_1 {
+	text-align: right;
+}
+
+.philosophy_box_3_inner {
+	position: relative;
+	width: 100%;
+}
+
+
+.philosophy_box_3 img {
+	width: 50%;
+  margin: auto 0;
+}
+
+.philosophy_box_5 {
+	width: 46%;
+}
+
+.fs_35 {
+	font-size: 35px;
+}
+
+.philosophy_box_5_inner .fs_14 {
+	font-size: 14px;
+}
+
+.box_position_1 {
+	position: absolute;
+	top: 140px;
+	left: 65px;
+	float: right;
+}
+
+.box_position_2 {
+	position: absolute;
+	top: 140px;
+	right: 65px;
+}
+
+.philosophy_box_5_inner h3 {
+	font-size: 1.3em;
+	margin-bottom: 6.5%;
+}
+
+.philosophy_box_5_inner p {
+	font-size: 1em;
+}
+
+
+/* ==========================================================================
+  Company
+  ========================================================================== */
+	#company {
+		padding-top: 130px;
+	}
+
+	.company_inner {
+	max-width: 670px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.company_box {
+	line-height: 3em;
+}
+
+.company_box dt {
+	font-size: 20px;
+}
+
+.company_list li:first-child {
+	width: 230px;
+}
+
+.boxsize_1 dt{
+	width: 120px;
+}
+
+.boxsize_2 {
+	margin-left: 40px;
+}
+
+.boxsize_2 dt{
+	width: 120px;
+}
+
+
+/* ==========================================================================
+  Contact
+  ========================================================================== */
+
+.cotact_form {
+	margin-bottom: 20px;
+}
+
+#contact {
+	padding-top: 130px;
+  margin-bottom: 130px;
+}
+
+#contact_form {
+	width: 40%;
+}
+
+.cotact_form {
+	margin-bottom: 20px;
+}
+
+.contact_list {
+	font-size: 20px;
+}
+
+.needtag {
+	padding: 2px 0 0;
+}
+
+#contact_form select {
+  height: 90px;
+}
+
+.btn_box {
+	width: 280px;
+	margin: 35px auto 0;
+}
+
+/* ==========================================================================
+  footer
+  ========================================================================== */
+
+footer {
+  color: #fff;
+  text-align: center;
+}
+
+.footer_top {
+	/* background-color: #1a1a1a; */
+	background-color: #333;
+	padding: 65px 0 20px;
+}
+
+.footer_top_inner {
+	font-size: 15px;
+}
+
+.footer_top_list_01 {
+	width: 180px;
+	margin: 0 auto 20px;
+}
+
+.footer_top_list_01 li:first-child {
+	margin-bottom: 20px;
+}
+
+.footer_top_list_01 li:nth-of-type(2) {
+	margin-bottom: 20px;
+}
+
+.footer_top_list_02 li {
+	display: inline-block;
+	text-align: right;
+	width: 150px;
+	font-size: 14px;
+}
+
+.footer_top_list_02 li:last-child {
+	margin-left: 20px;
+}
+
+li.footer_top_list_02_item {
+	width: 160px;
+	font-size: 16px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer_logo {
+	width: 60%;
+  height: auto;
+}
+
+.footer_bottom {
+	text-align: center;
+	/* background-color: rgb(8, 8, 8); */
+	background-color: #333;
+	padding: 20px;
+	/* font-size: 14px; */
+	font-size: 7px;
+}
+}
+
+
+@media screen and (max-width: 850px){
+
+#philosophy_box_345 {
+    margin-top: 20%;
+    margin-bottom: 281px;
+}
+}
+
+
+
+@media screen and (max-width: 768px){
+h2 {
+	margin-bottom: 45px;
+}
+
+/* ==========================================================================
+header
+========================================================================== */
+#pc_header {
+	display: none;
+}
+
+#mobile {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 9999;
+	padding: 10px 7px 7px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+hambarger_button
+========================================================================== */
+.menu-trigger,
+.menu-trigger span {
+  display: inline-block;
+  transition: all .4s;
+	box-sizing: border-box;
+	z-index: 9999;
+}
+.menu-trigger {
+  position: relative;
+  width: 38px;
+  height: 30px;
+}
+.menu-trigger span {
+  position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+  width: 100%;
+  height: 4px;
+	background-color: #000;
+	opacity: 0.8;
+}
+.menu-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.menu-trigger span:nth-of-type(2) {
+  top: 13px;
+}
+.menu-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+.menu-trigger.active span {
+  background-color: #fff;
+}
+
+.menu-trigger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(13px) rotate(-45deg);
+  transform: translateY(13px) rotate(-45deg);
+}
+.menu-trigger.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu-trigger.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-13px) rotate(45deg);
+  transform: translateY(-13px) rotate(45deg);
+}
+
+
+div.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #fff;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: opacity .6s ease, visibility .6s ease;
+}
+
+.globalMenuSp_inner {
+	width: 80%;
+  margin: 15% auto 0;
+}
+
+.globalMenuSp_title {
+	font-size: 35px;
+	border-bottom: 2px solid #fff;
+}
+
+div.globalMenuSp ul {
+  margin: 8% auto 0;
+  padding: 0;
+  width: 100%;
+}
+
+div.globalMenuSp ul li {
+  list-style-type: none;
+	margin-bottom: 12%;
+  width: 100%;
+	transition: .4s all;
+}
+
+div.globalMenuSp ul li:hover{
+  background: rgba(0,0,0,0.5);
+}
+
+div.globalMenuSp ul li a {
+  display: block;
+  text-decoration :none;
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.globalMenuSp_nav {
+	float: left;
+	line-height: 23px;
+	margin-right: 1rem;
+}
+
+.globalMenuSp_border {
+  display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+
+.globalMenuSp_border:before {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.globalMenuSp_border:before {
+  margin-right: 1rem; /* 文字の左隣 */
+}
+
+div.globalMenuSp.active {
+  display: block;
+}
+
+/* ==========================================================================
+slideshow
+========================================================================== */
+
+.slick-arrow {
+	bottom: 3.5%;
+}
+
+.slick-prev {
+	right: 54.5%;
+}
+
+.slick-next {
+	left: 54.5%;
+}
+
+.slick-counter {
+	width: 10%;
+	padding: 0.8%;
+}
+
+.kv {
+	height: 66px;
+}
+
+/*==================================================================
+
+	.top_information
+
+==================================================================*/
+
+
+.top_information {
+	width: 100%;
+	background-color: #286BC1;
+}
+
+.top_information h3 {
+	display: none;
+}
+
+.top_information_box_text {
+	position: relative;
+}
+
+.owl-carousel.owl-loaded {
+	overflow: hidden;
+}
+
+/*==================================================================
+
+	.top_news-row
+
+==================================================================*/
+
+
+/* 日付 */
+.top_news-row_content_date {
+	font-size: 10px;
+}
+
+/*==================================================================
+
+	$news
+
+==================================================================*/
+/* タイトル */
+.news .news_content_title {
+	margin-bottom: 16px;
+	font-size: 2.6rem;
+	font-weight: bold;
+}
+/* 日付 */
+.news .news_content_date {
+	line-height: 1;
+	margin-left: 1px;
+	color: #ADB6BF;
+	font-weight: 300;
+}
+/* お知らせテキスト */
+.news .news_content_text {
+	margin-bottom: 8rem;
+	padding-bottom: 8rem;
+	border-bottom: 1px solid #E1EBF3;
+}
+.news article:last-child .news_content_text {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* ==========================================================================
+  Business
+  business_list
+  ========================================================================== */
+
+.business_list {
+	font-weight: 600;
+}
+
+.business_list li{
+	width: 80%;
+	margin: 30px auto;
+}
+
+.business_list li:last-child {
+ margin-bottom: 0;
+}
+
+.business_list_img{
+  width: 100%;
+}
+
+.business_ttl {
+	font-size: 28px;
+}
+
+/* ==========================================================================
+  Philosophy
+  ========================================================================== */
+
+#philosophy {
+  padding-top: 130px;
+}
+
+#philosophy_inner {
+  position: relative;
+}
+
+.philosophy_box_2 {
+	width: 60%;
+	min-width: 350px;
+	padding: 20px 5px 20px 20px;
+	top: 26%;
+}
+
+.philosophy_box_2 h3 {
+	font-size: 18px;
+	line-height: 35px;
+}
+
+#philosophy_box_345 {
+	margin-top: 130px;
+	margin-bottom: 200px;
+}
+
+.philosophy_box_3 {
+	width: 66%;
+	margin: 0 auto;
+}
+
+.philosophy_box_3:last-child {
+	margin-top: 200px;
+}
+
+.philosophy_box_3_inner {
+	position: relative;
+}
+
+.philosophy_box_3_img_position_1 {
+	text-align: right;
+}
+
+
+.philosophy_box_3 img {
+	width: 65%;
+}
+
+.fs_30 {
+	font-size: 22px;
+}
+
+.philosophy_box_5_inner .fs_14 {
+	font-size: 14px;
+}
+
+.box_position_1 {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+}
+
+.box_position_2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.philosophy_box_5_inner h3 {
+	font-size: 1.4em;
+}
+
+.philosophy_box_5_inner p {
+	font-size: 1em;
+}
+
+/* ==========================================================================
+  Company
+  ========================================================================== */
+#company {
+	padding-top: 45px;
+}
+
+.company_inner {
+	display: block;
+	width: 300px;
+}
+
+.company_box {
+	line-height: 3em;
+}
+
+.company_list li:first-child {
+	width: 200px;
+}
+
+.boxsize_1 dt{
+	width: 100px;
+}
+
+.boxsize_2 dt{
+	width: 100px;
+}
+
+/* ==========================================================================
+  Contact
+  ========================================================================== */
+
+.cotact_form {
+	margin-bottom: 10px;
+}
+
+#contact {
+	padding-top: 130px;
+  margin-bottom: 45px;
+}
+
+#contact_form {
+	width: 60%;
+}
+
+.cotact_form {
+	margin-bottom: 10px;
+}
+
+.needtag {
+	padding: 2px 0 0;
+}
+
+#contact_form select {
+  height: 90px;
+}
+
+.btn_box {
+	width: 280px;
+	margin: 35px auto 0;
+}
+
+/* ==========================================================================
+  footer
+  ========================================================================== */
+
+footer {
+  color: #fff;
+  text-align: center;
+}
+
+.footer_top {
+	background-color: #1a1a1a;
+	padding: 65px 0 20px;
+}
+
+.footer_top_inner {
+	font-size: 15px;
+}
+
+.footer_top_list_01 {
+	width: 180px;
+	margin: 0 auto 20px;
+}
+
+.footer_top_list_01 li:first-child {
+	margin-bottom: 20px;
+}
+
+.footer_top_list_02 li {
+	display: inline-block;
+	text-align: right;
+	width: 150px;
+}
+
+.footer_top_list_02 li:last-child {
+	margin-left: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer_logo {
+	 width: 50%;
+  height: auto;
+}
+
+.footer_bottom {
+	text-align: center;
+	/* background-color: rgb(8, 8, 8); */
+	background-color: #333;
+	padding: 20px;
+	/* font-size: 12px; */
+	font-size: 7px;
+}
+}
+
+
+@media screen and (max-width: 480px){
+
+h2 {
+	font-size: 1.85em;
+	margin-bottom: 45px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+dt {
+	font-size: 17px;
+}
+
+label {
+	font-size: 16px;
+}
+
+dd {
+	font-size: 14px;
+}
+
+p, .footer_top_list_02_item a {
+	font-size: 16px;
+}
+
+p, dd {
+	font-weight: 400;
+}
+
+/* ==========================================================================
+slideshow
+========================================================================== */
+
+.slick-arrow {
+	bottom: 3%;
+}
+
+.slick-counter {
+	/* width: 10%;
+	padding: 0.8%; */
+	font-size: 12px;
+}
+
+.owl-dots {
+    padding: 0 0 0 10px;
+    background-color: #286BC1;
+}
+
+.header_img_txt {
+	display: none;
+}
+
+.header_img_txt_ttl {
+	display: none;
+}
+
+.header_img_txt_content {
+	display: none;
+}
+
+.header_img_txt_a {
+	display: none;
+}
+
+.header_img_txt_br::before {
+	content: "" !important ;
+	white-space: unset !important ;
+}
+
+/* ==========================================================================
+backnumbers
+========================================================================== */
+.backnumbers_text {
+	padding: 0 10% 15%;
+}
+
+.backnumbers_text li.info {
+	text-align: left;
+}
+
+.backnumbers_text h2 {
+	font-size: 2em;
+	margin: 5%;
+}
+
+.backnumbers_category {
+	width: 65px;
+	line-height: 2em;
+	align-items: center;
+}
+.month_day {
+width: 15%;
+margin-right: 5%;
+}
+
+.days {
+line-height: 14px;
+}
+
+.contents {
+padding-bottom: .5em;
+}
+
+.info {
+margin: 0 auto;
+}
+
+.description {
+	font-size: 10%;
+}
+
+/* ==========================================================================
+  Business
+  business_list
+  ========================================================================== */
+
+#business {
+	padding-top: 45px;
+}
+
+.business_ttl {
+	font-size: 18px;
+}
+
+.business_list li p {
+	font-size: 16px;
+}
+
+.business_pd {
+	padding: 0 40px ;
+}
+
+/* ==========================================================================
+Philosophy
+========================================================================== */
+
+#philosophy {
+  padding-top: 45px;
+}
+
+#philosophy_inner {
+  position: relative;
+}
+
+.philosophy_box_2 {
+	width: 65%;
+	min-width: 250px;
+	padding: 20px 5px 20px 20px;
+	top: 12%;
+}
+
+.philosophy_box_2 h3 {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.fs_30 {
+	font-size: 22px;
+}
+
+#philosophy_box_345 {
+	margin-top: 103px;
+	margin-bottom: 45px;
+}
+
+.philosophy_box_3 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.philosophy_box_3:last-child {
+	margin-top: 70px;
+}
+
+.philosophy_box_3_img_position_1, .philosophy_box_3_img_position_2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.philosophy_box_3 img {
+	width: 90%;
+}
+
+.philosophy_box_5 {
+	width: 86%;
+	margin: 0 auto;
+}
+
+.box_position_1 {
+	position: static;
+}
+
+.box_position_2 {
+	position: static;
+}
+
+.philosophy_box_5_inner h3 {
+	font-size: 20px;
+}
+
+/* ==========================================================================
+  Company
+  ========================================================================== */
+#company {
+	padding-top: 45px;
+}
+
+.company_inner {
+	display: block;
+	width: 280px;
+}
+
+.company_box {
+	line-height: 2.7em;
+}
+
+.company_list li:first-child {
+	width: 170px;
+}
+
+.boxsize_1 dt, .boxsize_2 dt {
+	width: 100px;
+}
+
+/* ==========================================================================
+  Contact
+  ========================================================================== */
+
+#contact {
+	padding-top: 45px;
+  margin-bottom: 45px;
+}
+
+#contact_form {
+  width: 80%;
+}
+
+.contact_list {
+	margin-top: 5px;
+}
+
+input, select, textarea {
+	font-size: 16px;
+}
+
+#contact_form select {
+  height: 30px;
+}
+
+.btn_box {
+	width: 80%;
+	margin-top: 30px;
+}
+
+.btn_box_inner li input {
+	font-size: 9px;
+}
+
+/* ==========================================================================
+  footer
+  ========================================================================== */
+
+footer {
+  color: #fff;
+  text-align: center;
+}
+
+.footer_top {
+	/* background-color: #1a1a1a; */
+	background-color: #333;
+	padding: 20px 0 20px;
+}
+
+.footer_top_list_01 {
+	width: 180px;
+	margin: 0 auto 10px;
+}
+
+.footer_top_list_01 li:first-child {
+	margin-bottom: 10px;
+}
+
+.footer_company_ttl {
+	font-size: 14px;
+}
+
+.footer_top_list_02 {
+	margin-bottom: 5px;
+}
+
+.footer_top_list_02:last-child {
+	width: 285px;
+	margin: 0 auto;
+}
+
+.footer_top_list_02:last-child {
+	margin-bottom: 0;
+}
+
+.footer_top_list_02 li {
+	display: inline-block;
+	width: 130px;
+	font-size: 12px;
+}
+
+.footer_top_list_02 li:last-child {
+	margin-left: 20px;
+}
+
+li.footer_top_list_02_item {
+	width: 100px;
+}
+
+li.footer_top_list_02_item:last-child {
+	width: 160px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer_logo {
+  width: 40%;
+  height: auto;
+}
+
+.footer_bottom {
+	text-align: center;
+	/* background-color: rgb(8, 8, 8); */
+	background-color: #333;
+	padding: 20px;
+	/* font-size: 10px; */
+	font-size: 8px;
+}
+}

@@ -1,0 +1,15 @@
+#next {
+  width: 160px;
+  box-sizing: border-box;
+  margin: 80px auto;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+#next:hover {
+  background-color: #333;
+}

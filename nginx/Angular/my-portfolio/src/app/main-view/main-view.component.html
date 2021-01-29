@@ -1,0 +1,19 @@
+<div *ngIf="navigation.name==='HOME'" id="home">
+  <app-home [navigation]="navigation"></app-home>
+</div>
+<div *ngIf="navigation.name==='ABOUT'" id="about">
+  <app-about [navigation]="navigation"></app-about>
+</div>
+<div *ngIf="navigation.name==='SKILLS'" id="skills">
+  <app-skills [navigation]="navigation"></app-skills>
+</div>
+<div *ngIf="navigation.name==='WORKS'" id="works">
+  <app-works [navigation]="navigation"></app-works>
+</div>
+<div *ngIf="navigation.name==='CONTACT'" id="contact">
+  <app-contact [navigation]="navigation"></app-contact>
+</div>
+<div *ngIf="navigation.name==='SNS'" id="sns">
+  <app-sns [navigation]="navigation"></app-sns>
+</div>
+<div id="next">NEXT ≫</div>

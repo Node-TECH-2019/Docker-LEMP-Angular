@@ -1,0 +1,45 @@
+
+<header>
+    <div class="logo"><img src="assets/img/logo.png" alt="合同会社Node TECH."></div>
+    <div
+    [hidden]="!outboundClick"
+    class="nav_wrapper"
+    >
+      <nav class="nav-menu">
+        <ul class="g_nav">
+          <li
+          *ngFor="let navigation of navigations"
+          (click)="onSelect(navigation)"
+          [class.selected]="navigation === selectedNavigation"
+          class="menu-item"
+          >
+            {{ navigation.name }}
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div
+    [hidden]="!inboundClick"
+    (click)="inboundClick = false"
+    (click)="outboundClick = true"
+    class="nav_wrapper"
+    >
+      <nav class="nav-menu">
+        <ul class="g_nav">
+          <li
+          *ngFor="let navigation of navigations"
+          (click)="onSelect(navigation)"
+          [class.selected]="navigation === selectedNavigation"
+          class="menu-item firstSelected"
+          >
+            {{ navigation.name }}
+          </li>
+        </ul>
+      </nav>
+    </div>
+</header>
+<main>
+  <app-main-view [navigation]="selectedNavigation"></app-main-view>
+</main>
+<footer></footer>
+
