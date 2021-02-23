@@ -1,7 +1,6 @@
 version: "3"
 services:
   nginx:
-    # build: ./nginx
     image: nginx:latest
     ports:
       - 5050:80
@@ -15,18 +14,18 @@ services:
       - angular
 
   php:
-    image: php:7.2-fpm
+    # image: php:7.2-fpm
+    depends_on:
+      - db
+    build: ./php
     volumes:
       - ./php/:/usr/local/etc/php/
       - ./app:/var/www/php
-    depends_on:
-      - db
 
   angular:
     build: ./nginx/angular/my-portfolio
     volumes:
       - ./nginx/angular/my-portfolio/dist/out:/var/www/html
-    # command: npm run build -- --output-path=./dist/out --configuration production
     environment:
       TZ: "Asia/Tokyo"
     depends_on:
@@ -36,18 +35,29 @@ services:
 
   db:
     image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: Angular_async
+      MYSQL_USER: docker_user
+      MYSQL_PASSWORD: docker_pass
     ports:
       - 13306:3306
     volumes:
       - data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: passwd
+      - ./db/my.cnf:/etc/mysql/conf.d/my.cnf
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
-    ports:
-      - 8899:80
     depends_on:
       - db
+    environment:
+    - PMA_ARBITRARY=1
+    - PMA_HOSTS=db
+    - PMA_USER=docker_user
+    - PMA_PASSWORD=docker_pass
+    ports:
+      - 8899:80
+    volumes:
+    - ./phpmyadmin/sessions:/sessions
 volumes:
   data:
